@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+//---如果函数没有显示指定返回值 那么函数返回值为undefined.
+/* 	function fun1(){}
+	alert(fun1()); */
+//-----------------------------------
+//使用return 关键字,返回内容
+	 function fun2(a,b){
+		alert('fun2');
+		return a+b;
+	}
+	//alert(fun2(1,2));//3 
+//return 关键字,在js中也可以作为结束方法运行的功能.
+	function fun3(){
+		alert('aaa');
+		return ;
+		alert('bbb');
+	}
+	//fun3();
+//--运算符 void()的使用-----------
+//用来拦截函数的返回值的.
+	//alert(void(fun2(1,2)));//undefined
+
+</script>
+	<a href="javaScript:void(fun2(2,3))" >点我</a>
+	<br/>
+	<a href="javaScript:void(0)"  >点我</a>
+</body>
+</html>

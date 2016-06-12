@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//1 js中的函数对象
+	//函数的调用
+		function fun1(a,b){
+		alert(a+b);
+		}
+		
+		/*f un1(1,2);//3
+		fun1(1,2,3);//3
+		fun1();//NaN */
+		
+		//js中函数的调用只看函数名称.不看参数列表
+	function fun2(){
+			//alert(arguments.length); //取得实际参数个数
+			alert(arguments[0]); // 获得第一个实际参数
+		}
+		//函数中的内置对象 arguments
+		//arguments ==> 代表函数运行时的实际参数列表.
+		/* fun2(); //0  undefined
+		fun2(1,2); //2 1
+		fun2(1,2,3); //3 1 */
+		
+	// js中存在函数的重载吗? 如何重载?
+			function fun3(){
+				alert('aaa');
+			}
+			function fun3(a){
+				alert('bbb');
+			}
+		//如上不能重载,是覆盖
+			function fun4(){
+			if(arguments.length == 2){
+				alert(arguments[0]+arguments[1]);
+			}else if(arguments.length == 3){
+				alert(arguments[0]+arguments[1]-arguments[2]);
+			}
+			
+		}
+		
+		
+		fun4(1,2);//3
+		fun4(1,2,3);//0
+		
+		//以上是重载.
+		
+		
+		
+</script>
+
+</body>
+</html>
