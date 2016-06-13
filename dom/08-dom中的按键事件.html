@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>mytitle</title>
+		
+		<style type="text/css">
+			
+			div{
+				
+				border-color: crimson;
+				
+				border-width: 2px;
+				
+				border-style: solid;
+			}
+			
+			#mydiv{
+				
+				width: 300px;
+				
+				height: 300px;
+				
+				
+			}
+			
+			/*#mydiv2{
+				
+				width: 100px;
+				
+				height: 100px;
+				
+				margin-left: 100px;
+				
+				margin-top: 100px;
+			}*/
+			
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id="mydiv">
+
+			<!--<div id="mydiv2"></div>-->
+
+		</div>
+
+	</body>
+
+</html>
+
+	<script type="text/javascript">
+	
+	var mydiv = document.getElementById("mydiv");
+	
+	//	鼠标被按下的点击事件
+//	mydiv.onmousedown = function (event){
+//		
+//		alert(event.button);
+//		
+//	}
+//	
+//		鼠标抬起的响应事件
+//	mydiv.onmouseup = function (){
+//		
+//		alert("mouse was up!");
+//	}
+//	
+//		鼠标移动到某元素上的响应事件
+//	mydiv.onmouseover = function (){
+//		
+//		alert("mouse was over!");
+//	}
+
+// 	鼠标被移动的响应事件
+	mydiv.onmousemove = function (event){
+		
+		alert(event.clientX + "==="+event.clientY);
+	}
+//	
+// 	鼠标从某元素移开的响应事件
+//	mydiv.onmouseout = function(){
+//		
+//		alert("mouse was out");
+//	}
+	
+	</script>

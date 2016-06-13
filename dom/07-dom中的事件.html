@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="div">
+			亲，买一个吧！
+		</div>
+		
+		<img src="../img/youdao.jpg" id="image"/>
+
+	</body>
+
+</html>
+
+<script type="text/javascript">
+
+	var div = document.getElementById("div");
+	
+	var img = document.getElementById("image");
+	
+	//为图片设置点击事件
+	img.onclick = function (){
+		
+		alert("图片被点击了！");
+		
+	}
+	
+	//为div添加点击事件
+	div.onclick = function (){
+		
+		alert("aaa");
+	}
+	
+</script>

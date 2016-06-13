@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>onfocus onblur</title>
+	</head>
+
+	<body>
+		
+		<input type="text" size="30" id="inputtext" />
+		
+
+	</body>
+
+</html>
+
+<script type="text/javascript">
+
+	var text = document.getElementById("inputtext");
+	
+	//为文本框设置得到焦点时的点击事件
+	text.onfocus = function (){
+		
+		alert("onfocus 获取到了焦点");
+		
+	}
+	
+	//为文本框设置失去焦点时的点击事件
+	text.onblur = function (){
+		
+		alert("onblur 失去了焦点");
+	}
+	
+	
+</script>

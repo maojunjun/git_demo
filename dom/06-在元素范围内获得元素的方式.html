@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<div id="one" >
+		<div id="two" class="two" name="two" ></div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	
+	//嵌套查找支持class查找、Tag查找，不支持ID、name查找
+
+	var one = document.getElementById("one");
+	//根据ID查找里面的div ==> 不支持
+	/* var two =	one.getElementById("two");
+	alert(two); */
+	//根据 class查找 ==> 支持
+		/* var two = one.getElementsByClassName("two")[0];
+		alert(two); */
+	//根据name查找 ==> 不支持
+		/* var two = one.getElementsByName("two")[0];
+		alert(two); */
+	//根据标签名称查找==> 支持
+		var two = one.getElementsByTagName("div")[0];
+		alert(two);
+</script>

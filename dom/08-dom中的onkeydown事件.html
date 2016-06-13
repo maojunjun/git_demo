@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>onkeydown</title>
+		
+	</head>
+	
+	<body>
+
+	<input type="text" id="inputtext" size="30" />
+
+	</body>
+	
+</html>
+
+<script type="text/javascript">
+	
+	var text = document.getElementById("inputtext");
+	
+	//为文本框设置键盘敲击的事件 onkeydown
+	text.onkeydown = function (event){
+		
+		//回车键的keycode是13，所以设置当点击回车键时提交表单
+		if(event.keyCode == 13){
+				
+			alert("提交表单");
+		
+		}
+	}
+	
+</script>

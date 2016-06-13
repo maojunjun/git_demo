@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>onload event</title>
+	
+	<script type="text/javascript">
+		
+	function fun1(){
+		
+		var text = document.getElementById("inputtext1");
+		
+		alert(text);
+		
+	}
+		
+	</script>
+	
+	
+	</head>
+	
+	//在HTML文档加载完毕后调用fun1方法，所以在input标签上面对其进行操作不会报错
+	<body onload="fun1()">
+	
+	<input type="text" id="inputtext1"  />
+	
+
+	</body>
+	
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>onStopPropagation</title>
+		
+		<style type="text/css">
+			
+			div{
+				
+				border: 1px red solid;
+				
+			}
+			
+			#first{
+				
+				width: 300px;
+				height: 300px;
+				
+			}
+			
+			#second{
+				
+				width:100px;
+				height: 100px;			}
+			
+		</style>
+		
+		<script type="text/javascript">
+			
+			function fun1(){
+				
+				var first = document.getElementById("first");
+				var second = document.getElementById("second");
+				
+				first.onclick = function(){
+					
+					alert("first div was clicked!");
+					
+				}
+				
+				second.onclick = function(event){
+					
+					alert("second div was clicked!");
+					
+					//当点击第二个div框时，通过event调用stopPropagation方法中断第一个div盒子向第二个div盒子传递点击事件
+					event.stopPropagation();
+					
+				}
+				
+			}
+			
+		</script>
+		
+	</head>
+
+	<body onload="fun1()">
+
+		<div id="first" >
+
+			<div id="second">
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

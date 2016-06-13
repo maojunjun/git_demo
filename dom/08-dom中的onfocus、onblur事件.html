@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>onchange</title>
+	</head>
+
+	<body>
+		
+		<input type="text" size="30" id="inputtext" />
+		<select id="select">
+			
+			<option>China</option>
+			<option>America</option>
+			<option>Europe</option>
+			
+		</select>
+
+	</body>
+
+</html>
+
+<script type="text/javascript">
+
+	var text = document.getElementById("inputtext");
+	
+	//为文本框设置内容发生了改变的响应事件
+	text.onchange = function (){
+		
+		alert("文本框中的内容发生了改变！");
+		
+	}
+	
+	//为选择框设置内容发生改变的响应事件
+	var select = document.getElementById("select");
+	
+	select.onchange = function (){
+		
+		alert("select框中的内容发生了改变！");
+		
+	}
+	
+	
+</script>
